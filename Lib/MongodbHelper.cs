@@ -12,7 +12,7 @@ namespace Lib
     public class MongodbHelper
     {
 
-        MongoClient client { get; }
+        private MongoClient client;
         /// <summary>
         /// mongodb://localhost:27017
         /// </summary>
@@ -31,10 +31,12 @@ namespace Lib
         }
 
 
-        public void GetColl(String DbBane, String CollName)
+        public String QueryAllData(String DbBane, String CollName)
         {
             IMongoDatabase database = client.GetDatabase(DbBane);
             IMongoCollection<object> coll = database.GetCollection<object>(CollName);
+
+            return QueryAllData(coll);
         }
 
         private String QueryAllData(IMongoCollection<object> collection)
@@ -58,7 +60,7 @@ namespace Lib
         }
 
 
-        public string QueryData(String CollName)
+        public T QueryData<T>(String CollName, String t)
         {
 
         }
