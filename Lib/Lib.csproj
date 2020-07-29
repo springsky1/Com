@@ -86,10 +86,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\T_scada_cleaning.cs" />
+    <Compile Include="Model\T_scada_real.cs" />
     <Compile Include="MongodbHelper.cs" />
     <Compile Include="MongodbHeplerNew.cs" />
     <Compile Include="RedisHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialize\BsonCustomExtensionMethods.cs" />
+    <Compile Include="Serialize\StringOrNumberSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
