@@ -51,7 +51,8 @@
     "vue-router": "^2.2.0",
     "vue-style-loader": "^2.0.0",
     "vue-template-compiler": "^2.1.10",
-    "webpack": "^2.2.1",
+    "webpack": "^2.7.0",
+    "webpack-cli": "^3.3.12",
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.3.0",
     "webpack-merge": "^2.6.1"

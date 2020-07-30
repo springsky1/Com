@@ -21,3 +21,9 @@ D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\MongoDB.Driver.xml
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\MongoDB.Bson.xml
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\MongoDB.Driver.Core.xml
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\DnsClient.xml
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\NPOI.dll
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\BouncyCastle.Crypto.dll
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\ICSharpCode.SharpZipLib.pdb
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\BouncyCastle.Crypto.xml
