@@ -15,6 +15,8 @@ namespace ConsoleApp1
 
             MongodbHelper mongodb = new MongodbHelper();
             mongodb.Test();
+
+
         }
     }
 }

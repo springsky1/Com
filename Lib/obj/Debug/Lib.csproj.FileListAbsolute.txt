@@ -23,4 +23,3 @@ D:\mycode\HUBCom\Com\Lib\bin\Debug\DnsClient.xml
 D:\mycode\HUBCom\Com\Lib\bin\Debug\MongoDB.Bson.xml
 D:\mycode\HUBCom\Com\Lib\bin\Debug\MongoDB.Driver.xml
 D:\mycode\HUBCom\Com\Lib\bin\Debug\MongoDB.Driver.Core.xml
-D:\mycode\HUBCom\Com\Lib\obj\Debug\Lib.csprojAssemblyReference.cache

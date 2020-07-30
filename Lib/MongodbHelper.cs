@@ -1,5 +1,6 @@
 ﻿using Lib.Model;
 using MongoDB.Bson;
+using MongoDB.Bson.Serialization.IdGenerators;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 using System;
@@ -35,34 +36,104 @@ namespace Lib
             var asaasa = QueryAllData<T_scada_cleaning>("scadadb_history", "t_scada_cleaning", M => M.id.Equals("H_11_压力"));
 
             //   T_scada_real realNew = new T_scada_real { value = "测试1212", _id = "H_环境温度_XSReServioir", time = 1212121 };
-            T_scada_real realNew = new T_scada_real { value = "测试1212", _id = null, time = 0 };
+            //  T_scada_real realNew = new T_scada_real { value = "测试333" };
 
-            UpdateData<T_scada_real>("scadadb_real", "t_scada_real", realNew, M => M._id.Equals("H_环境温度_XSReServioir"));
+            // var realNew = new { value = "测试444", time = 121212 };
+            var realNew = new { value = "测试555" };
+            //   UpdateData<T_scada_real>("scadadb_real", "t_scada_real", realNew, M => M._id.Equals("H_时雨量_XSReServioir"));
 
+
+            List<T_scada_real> realsNew = new List<T_scada_real>();
+            for (int i = 0; i < 10; i++)
+            {
+                realsNew.Add(new T_scada_real { value = "测试123_" + i, time = i * 1000, _id = BsonObjectId.GenerateNewId().ToString() });
+            }
+            Insert<T_scada_real>("scadadb_real", "t_scada_real", realsNew, true);
+
+            DeleteMany<T_scada_real>("scadadb_real", "t_scada_real", M => M.value.Contains("测试"));
 
         }
 
-
-
-        public void UpdateData<T>(String DbBane, String CollName, T n, Expression<Func<T, bool>> f = null)
+        /// <summary>
+        /// 插入数据
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="DbBane"></param>
+        /// <param name="CollName"></param>
+        /// <param name="ts"></param>
+        /// <param name="IsOrdered"></param>
+        public void Insert<T>(String DbBane, String CollName, List<T> ts, bool IsOrdered = true)
         {
             IMongoDatabase database = client.GetDatabase(DbBane);
             IMongoCollection<T> coll = database.GetCollection<T>(CollName);
 
+            coll.InsertMany(ts, new InsertManyOptions { IsOrdered = IsOrdered });
+        }
+        /// <summary>
+        /// 删除数据
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="DbBane"></param>
+        /// <param name="CollName"></param>
+        /// <param name="f"></param>
+        public void DeleteMany<T>(String DbBane, String CollName, Expression<Func<T, bool>> f)
+        {
+            IMongoDatabase database = client.GetDatabase(DbBane);
+            IMongoCollection<T> coll = database.GetCollection<T>(CollName);
+
+            DeleteResult result = coll.DeleteMany(f);
+        }
+
+
+
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="DbBane">数据库名称</param>
+        /// <param name="CollName">数据集名称</param>
+        /// <param name="n">新的数据 直接定义一个新对象 字段没有不更新 </param>
+        /// <param name="f">条件</param>
+        public void UpdateData<T>(String DbBane, String CollName, object n, Expression<Func<T, bool>> f = null)
+        {
+            IMongoDatabase database = client.GetDatabase(DbBane);
+            IMongoCollection<BsonDocument> coll = database.GetCollection<BsonDocument>(CollName);
+
             UpdateResult result = updateData<T>(coll, f, n);
         }
 
-        private UpdateResult updateData<T>(IMongoCollection<T> collection, Expression<Func<T, bool>> f, T n)
+        private UpdateResult updateData<T>(IMongoCollection<BsonDocument> collection, Expression<Func<T, bool>> f, object n)
         {
             FilterDefinition<T> filter = f;
 
-            //   UpdateDefinition<T> u = new BsonDocument("$set", n.ToBsonDocumentIgnorNull());
+            // BsonDocument bsons = new BsonDocument("$set", n.ToBsonDocument()); 
 
-            UpdateDefinition<T> u = new BsonDocument("$set", n.ToBsonDocument());
+            UpdateDefinition<BsonDocument> update = BuildUpdateDoc(n.ToBsonDocument());
 
-            UpdateResult fluent = collection.UpdateOne(f, u, new UpdateOptions { IsUpsert = true });
+            UpdateResult fluent = collection.UpdateOne(f.ToJson(), update, new UpdateOptions { IsUpsert = true });
 
-            return fluent;
+
+
+            return fluent;// fluent;
+        }
+
+        private static UpdateDefinition<BsonDocument> BuildUpdateDoc(BsonDocument bsons)
+        {
+            var update = Builders<BsonDocument>.Update;
+            var updates = new List<UpdateDefinition<BsonDocument>>();
+
+            for (int i = 0; i < bsons.ElementCount; i++)
+            {
+                if (bsons.GetElement(i).Value != BsonNull.Value)
+                {
+                    updates.Add(Builders<BsonDocument>.Update.Set(bsons.GetElement(i).Name, bsons.GetElement(i).Value.ToJson()));
+                }
+                else if (bsons.GetElement(i).Value.IsBsonArray)
+                {
+
+                }
+            }
+            return update.Combine(updates);
         }
 
 
