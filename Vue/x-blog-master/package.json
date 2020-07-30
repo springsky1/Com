@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/CommanderXL/x-blog#readme",
   "devDependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.19.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
