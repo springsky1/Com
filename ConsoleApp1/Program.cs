@@ -1,4 +1,5 @@
 ﻿using Lib;
+using Lib.Npoi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,10 @@ namespace ConsoleApp1
 
             //    RedisHelper.Test();
 
-            MongodbHelper mongodb = new MongodbHelper();
-            mongodb.Test();
+            // MongodbHelper mongodb = new MongodbHelper();
+            // mongodb.Test();
 
-
+            NPOIHelper.Test();
         }
     }
 }
