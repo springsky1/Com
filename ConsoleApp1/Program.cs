@@ -17,7 +17,9 @@ namespace ConsoleApp1
             // MongodbHelper mongodb = new MongodbHelper();
             // mongodb.Test();
 
-            NPOIHelper.Test();
+            //   NPOIHelper.Test();
+
+            ExcelTestClass.ImportExcelTest();
         }
     }
 }
