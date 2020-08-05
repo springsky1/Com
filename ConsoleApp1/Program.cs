@@ -19,7 +19,9 @@ namespace ConsoleApp1
 
             //   NPOIHelper.Test();
 
-            ExcelTestClass.ImportExcelTest();
+            //  ExcelTestClass.ImportExcelTest();
+
+            ExcelTestClass.temp();
         }
     }
 }

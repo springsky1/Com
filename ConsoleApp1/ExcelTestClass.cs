@@ -52,6 +52,24 @@ namespace ConsoleApp1
         }
 
 
+        public static void temp()
+        {
+            byte[] bs = File.ReadAllBytes(@"D:\mycode\HUBCom\Com\ConsoleApp1\Excel\Temp.xls");
+
+            MemoryStream memoryStream = new MemoryStream(bs);
+
+            DataTable table = CreateDataTable();
+
+            MemoryStream data = NPOIHelper.Templte(memoryStream, table);
+
+            using (FileStream stream = File.OpenWrite(@"D:\mycode\HUBCom\Com\ConsoleApp1\Excel\" + DateTime.Now.Ticks.ToString() + "2222.xls"))
+            {
+                byte[] vs = data.ToArray();
+                stream.Write(vs, 0, vs.Length);
+            }
+        }
+
+
         public static void Test()
         {
             DataTable dataTable = new DataTable();
