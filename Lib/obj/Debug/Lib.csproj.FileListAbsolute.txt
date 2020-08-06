@@ -33,3 +33,5 @@ D:\mycode\HUBCom\Com\Lib\bin\Debug\BouncyCastle.Crypto.xml
 D:\mycode\HUBCom\Com\Lib\bin\Debug\ICSharpCode.SharpZipLib.pdb
 D:\mycode\HUBCom\Com\Lib\bin\Debug\ICSharpCode.SharpZipLib.xml
 D:\mycode\HUBCom\Com\Lib\obj\Debug\Lib.csprojAssemblyReference.cache
+D:\mycode\HUBCom\Com\Lib\bin\Debug\log4net.dll
+D:\mycode\HUBCom\Com\Lib\bin\Debug\log4net.xml

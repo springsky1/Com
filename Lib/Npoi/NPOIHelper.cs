@@ -26,6 +26,21 @@ namespace Lib.Npoi
     {
 
 
+        private static string GetCellValue(ICell cell)
+        {
+            string StringData = null;
+
+            switch (cell.CellType)
+            {
+                case CellType.String: { StringData = cell.StringCellValue; break; }
+                case CellType.Numeric: { StringData = cell.NumericCellValue.ToString(); break; }
+                case CellType.Unknown: { StringData = cell.StringCellValue.ToString(); break; }
+                case CellType.Boolean: { StringData = cell.StringCellValue.ToString(); break; }
+
+            }
+            return StringData;
+        }
+
 
         public static MemoryStream Templte(MemoryStream stream, DataTable table)
         {
@@ -33,7 +48,7 @@ namespace Lib.Npoi
 
             IWorkbook workbook = new HSSFWorkbook(stream);
             ISheet sheet = workbook.GetSheetAt(0);
-
+            sheet.ForceFormulaRecalculation = true;
             String tableName = table.TableName;
 
             List<ExcelBindSource> sources = new List<ExcelBindSource>();
@@ -48,7 +63,7 @@ namespace Lib.Npoi
 
                     for (int j = row.FirstCellNum; j <= row.LastCellNum; j++)
                     {
-                        if (row.GetCell(j) != null && dd == row.GetCell(j).StringCellValue.ToUpper())
+                        if (row.GetCell(j) != null && GetCellValue(row.GetCell(j)) != null && dd == GetCellValue(row.GetCell(j)).ToUpper())
                         {
                             sources.Add(new ExcelBindSource { KeyName = col.ColumnName.ToUpper(), RowNum = i, ColNum = j });
                         }
@@ -61,19 +76,26 @@ namespace Lib.Npoi
                 int minrow = sources.Select(a => a.RowNum).OrderBy(a => a).FirstOrDefault();
                 int maxrow = sources.Select(a => a.RowNum).OrderByDescending(a => a).FirstOrDefault();
 
-                sheet.ShiftRows(minrow + 1, table.Rows.Count + maxrow + 1, table.Rows.Count);
+                sheet.ShiftRows(minrow + 1, table.Rows.Count + maxrow, table.Rows.Count - 1);
+
                 foreach (ExcelBindSource source in sources)
                 {
-
+                    IRow rowTem = sheet.GetRow(source.RowNum);
 
                     for (int jj = 0; jj < table.Rows.Count; jj++)
                     {
-                        IRow row = sheet.GetRow(source.RowNum + 1 + jj);
-                        if (row == null) row = sheet.CreateRow(source.RowNum + 1 + jj);
-                        ICell cell = row.GetCell(source.ColNum);
-                        if (cell == null)
-                            cell = row.CreateCell(source.ColNum);
-                        cell.SetCellValue(table.Rows[jj][source.KeyName].ToString());
+                        IRow row = sheet.GetRow(source.RowNum + jj);
+                        if (row == null) row = sheet.CreateRow(source.RowNum + jj);
+
+                        for (int xx = rowTem.FirstCellNum; xx < rowTem.LastCellNum; xx++)
+                        {
+                            ICell cell = row.GetCell(xx);
+                            if (cell == null)
+                                cell = row.CreateCell(xx);
+                            if (xx == source.ColNum)
+                                cell.SetCellValue(table.Rows[jj][source.KeyName].ToString());
+                            cell.CellStyle = sheet.GetRow(source.RowNum).GetCell(xx).CellStyle;
+                        }
                     }
 
                 }
