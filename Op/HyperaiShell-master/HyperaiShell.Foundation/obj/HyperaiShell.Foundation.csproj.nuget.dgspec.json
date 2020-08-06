@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\HyperaiShell.Foundation.csproj": {}
+  },
+  "projects": {
+    "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\HyperaiShell.Foundation.csproj": {
+      "version": "2020.7.24",
+      "restore": {
+        "projectUniqueName": "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\HyperaiShell.Foundation.csproj",
+        "projectName": "HyperaiShell.Foundation",
+        "projectPath": "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\HyperaiShell.Foundation.csproj",
+        "packagesPath": "C:\\Users\\lcc\\.nuget\\packages\\",
+        "outputPath": "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lcc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Hyperai.Abstractions": {
+              "target": "Package",
+              "version": "[2020.7.25, )"
+            },
+            "Hyperai.Units.Abstractions": {
+              "target": "Package",
+              "version": "[2020.7.26, )"
+            },
+            "LiteDB": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+2020-08-06T13:49:16.9566858+08:00  [INF] Connecting to "HOST":6259 (d4516100)
+2020-08-06T13:49:19.9538316+08:00  [FTL] Terminating for exception uncaught. (8a6980a8)
+System.AggregateException: One or more errors occurred. (不知道这样的主机。)
+ ---> System.Net.Http.HttpRequestException: 不知道这样的主机。
+ ---> System.Net.Sockets.SocketException (11001): 不知道这样的主机。
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ac682.Hyperai.Clients.Mirai.ApiHttpClient.PostAsync(String action, HttpContent content)
+   at Ac682.Hyperai.Clients.Mirai.ApiHttpClient.PostObjectAsync(String action, Object body)
+   at Ac682.Hyperai.Clients.Mirai.MiraiHttpSession.Connect()
+   at Ac682.Hyperai.Clients.Mirai.MiraiClient.Connect()
+   at Hyperai.HyperaiApplication.<StartAsync>b__8_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Hyperai.HyperaiApplication.StartAsync()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Hyperai.HyperaiApplicationExtensions.Run(IHyperaiApplication app)
+   at HyperaiShell.App.Program.Main(String[] args) in D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\Program.cs:line 54
+2020-08-06T13:51:29.1574438+08:00  [INF] Connecting to "127.0.0.1":6259 (d4516100)
+2020-08-06T13:51:59.4896435+08:00  [INF] Connecting to "127.0.0.1":6269 (d4516100)
+2020-08-06T13:52:01.8692825+08:00  [FTL] Terminating for exception uncaught. (8a6980a8)
+System.AggregateException: One or more errors occurred. (由于目标计算机积极拒绝，无法连接。)
+ ---> System.Net.Http.HttpRequestException: 由于目标计算机积极拒绝，无法连接。
+ ---> System.Net.Sockets.SocketException (10061): 由于目标计算机积极拒绝，无法连接。
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ac682.Hyperai.Clients.Mirai.ApiHttpClient.PostAsync(String action, HttpContent content)
+   at Ac682.Hyperai.Clients.Mirai.ApiHttpClient.PostObjectAsync(String action, Object body)
+   at Ac682.Hyperai.Clients.Mirai.MiraiHttpSession.Connect()
+   at Ac682.Hyperai.Clients.Mirai.MiraiClient.Connect()
+   at Hyperai.HyperaiApplication.<StartAsync>b__8_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Hyperai.HyperaiApplication.StartAsync()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Hyperai.HyperaiApplicationExtensions.Run(IHyperaiApplication app)
+   at HyperaiShell.App.Program.Main(String[] args) in D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\Program.cs:line 54
+2020-08-06T13:59:13.9529089+08:00  [INF] Connecting to "127.0.0.1":6259 (d4516100)

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperaiShell.App", "HyperaiShell.App\HyperaiShell.App.csproj", "{F4970A9D-F79C-497B-BA4B-C11E819BD1F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ac682.Hyperai.Clients.Mirai", "Ac682.Hyperai.Clients.Mirai-master\Ac682.Hyperai.Clients.Mirai\Ac682.Hyperai.Clients.Mirai.csproj", "{548AC131-64C3-449E-9C88-F685F4F1EA25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperaiShell.Foundation", "HyperaiShell.Foundation\HyperaiShell.Foundation.csproj", "{AE8BB1D2-FDBD-41F5-BACA-249F8D8BA370}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4970A9D-F79C-497B-BA4B-C11E819BD1F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4970A9D-F79C-497B-BA4B-C11E819BD1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4970A9D-F79C-497B-BA4B-C11E819BD1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4970A9D-F79C-497B-BA4B-C11E819BD1F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{548AC131-64C3-449E-9C88-F685F4F1EA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548AC131-64C3-449E-9C88-F685F4F1EA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548AC131-64C3-449E-9C88-F685F4F1EA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548AC131-64C3-449E-9C88-F685F4F1EA25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8BB1D2-FDBD-41F5-BACA-249F8D8BA370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8BB1D2-FDBD-41F5-BACA-249F8D8BA370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8BB1D2-FDBD-41F5-BACA-249F8D8BA370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8BB1D2-FDBD-41F5-BACA-249F8D8BA370}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9D53715-6E9F-4E2F-82CE-2DF2412CF1EE}
+	EndGlobalSection
+EndGlobal

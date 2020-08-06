@@ -1,0 +1,9 @@
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\bin\Debug\netstandard2.1\HyperaiShell.Foundation.deps.json
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\bin\Debug\netstandard2.1\HyperaiShell.Foundation.dll
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\bin\Debug\netstandard2.1\HyperaiShell.Foundation.pdb
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.AssemblyInfoInputs.cache
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.AssemblyInfo.cs
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.csproj.CoreCompileInputs.cache
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.dll
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.pdb
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.csprojAssemblyReference.cache

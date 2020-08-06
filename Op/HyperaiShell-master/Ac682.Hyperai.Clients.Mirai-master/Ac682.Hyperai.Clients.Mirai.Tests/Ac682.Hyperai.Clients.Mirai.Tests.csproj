@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>exe</OutputType>
+    <StartupObject>Ac682.Hyperai.Clients.Mirai.Tests.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ac682.Hyperai.Clients.Mirai\Ac682.Hyperai.Clients.Mirai.csproj" />
+  </ItemGroup>
+
+</Project>
