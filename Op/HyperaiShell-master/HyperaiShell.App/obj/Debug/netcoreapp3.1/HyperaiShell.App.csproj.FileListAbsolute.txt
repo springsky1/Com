@@ -68,3 +68,5 @@ D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\obj\Debug\netcoreap
 D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\obj\Debug\netcoreapp3.1\HyperaiShell.App.pdb
 D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\obj\Debug\netcoreapp3.1\HyperaiShell.App.genruntimeconfig.cache
 D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\obj\Debug\netcoreapp3.1\HyperaiShell.App.csproj.CoreCompileInputs.cache
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\bin\Debug\netcoreapp3.1\Ac682.Hyperai.Clients.Mirai.dll
+D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.App\bin\Debug\netcoreapp3.1\Ac682.Hyperai.Clients.Mirai.pdb

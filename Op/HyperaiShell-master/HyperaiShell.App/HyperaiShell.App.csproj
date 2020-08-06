@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Ac682.Hyperai.Clients.Mirai-master\Ac682.Hyperai.Clients.Mirai\Ac682.Hyperai.Clients.Mirai.csproj" />
+    <ProjectReference Include="..\Ac682.Hyperai.Clients.Mirai-master\Ac682.Hyperai.Clients.Mirai\Ac682.Hyperai.Clients.Mirai.csproj" />
     <ProjectReference Include="..\HyperaiShell.Foundation\HyperaiShell.Foundation.csproj" />
   </ItemGroup>
 

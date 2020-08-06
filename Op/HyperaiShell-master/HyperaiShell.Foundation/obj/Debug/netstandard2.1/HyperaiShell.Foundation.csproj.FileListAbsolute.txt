@@ -6,4 +6,3 @@ D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\ne
 D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.csproj.CoreCompileInputs.cache
 D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.dll
 D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.pdb
-D:\mycode\HUBCom\Com\Op\HyperaiShell-master\HyperaiShell.Foundation\obj\Debug\netstandard2.1\HyperaiShell.Foundation.csprojAssemblyReference.cache

@@ -4732,8 +4732,8 @@
     },
     "Ac682.Hyperai.Clients.Mirai/2020.8.2.1": {
       "type": "project",
-      "path": "../../Ac682.Hyperai.Clients.Mirai-master/Ac682.Hyperai.Clients.Mirai/Ac682.Hyperai.Clients.Mirai.csproj",
-      "msbuildProject": "../../Ac682.Hyperai.Clients.Mirai-master/Ac682.Hyperai.Clients.Mirai/Ac682.Hyperai.Clients.Mirai.csproj"
+      "path": "../Ac682.Hyperai.Clients.Mirai-master/Ac682.Hyperai.Clients.Mirai/Ac682.Hyperai.Clients.Mirai.csproj",
+      "msbuildProject": "../Ac682.Hyperai.Clients.Mirai-master/Ac682.Hyperai.Clients.Mirai/Ac682.Hyperai.Clients.Mirai.csproj"
     },
     "HyperaiShell.Foundation/2020.7.24": {
       "type": "project",
@@ -4789,8 +4789,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\mycode\\HUBCom\\Com\\Op\\Ac682.Hyperai.Clients.Mirai-master\\Ac682.Hyperai.Clients.Mirai\\Ac682.Hyperai.Clients.Mirai.csproj": {
-              "projectPath": "D:\\mycode\\HUBCom\\Com\\Op\\Ac682.Hyperai.Clients.Mirai-master\\Ac682.Hyperai.Clients.Mirai\\Ac682.Hyperai.Clients.Mirai.csproj"
+            "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\Ac682.Hyperai.Clients.Mirai-master\\Ac682.Hyperai.Clients.Mirai\\Ac682.Hyperai.Clients.Mirai.csproj": {
+              "projectPath": "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\Ac682.Hyperai.Clients.Mirai-master\\Ac682.Hyperai.Clients.Mirai\\Ac682.Hyperai.Clients.Mirai.csproj"
             },
             "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\HyperaiShell.Foundation.csproj": {
               "projectPath": "D:\\mycode\\HUBCom\\Com\\Op\\HyperaiShell-master\\HyperaiShell.Foundation\\HyperaiShell.Foundation.csproj"
