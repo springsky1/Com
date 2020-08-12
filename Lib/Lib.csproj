@@ -110,6 +110,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\DBHelper.cs" />
     <Compile Include="Log\LogHelper.cs" />
     <Compile Include="Mongodb\Model\T_scada_cleaning.cs" />
     <Compile Include="Mongodb\Model\T_scada_real.cs" />
