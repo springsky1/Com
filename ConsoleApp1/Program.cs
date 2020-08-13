@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApp1
 {
@@ -21,7 +22,20 @@ namespace ConsoleApp1
 
             //  ExcelTestClass.ImportExcelTest();
 
-            ExcelTestClass.temp();
+            //ExcelTestClass.temp();
+
+            testc();
+        }
+
+        static void testc()
+        {
+
+
+
+            String asas = Regex.IsMatch(("12120001000.1212120000001000000\u0000\u0000").Replace("\u0000", ""), "^[0-9|.]*$") ? ("12120001000.1212120000001000000\u0000\u0000").Replace("\u0000", "").TrimEnd('.', '0') : ("12120001000.1212120000001000000\u0000\u0000").Replace("\u0000", "");
+            //  String asasasas = ("true000\u0000\u0000").Replace("\u0000", "").TrimEnd('.', '0');
+            String asasasas = Regex.IsMatch(("true000\u0000\u0000").Replace("\u0000", ""), "^[0-9|.]*$") ? ("true000\u0000\u0000").Replace("\u0000", "").TrimEnd('.', '0') : ("true000\u0000\u0000").Replace("\u0000", "");
+
         }
     }
 }

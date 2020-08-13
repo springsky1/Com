@@ -29,3 +29,5 @@ D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\ICSharpCode.SharpZipLib.xml
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\BouncyCastle.Crypto.xml
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\log4net.dll
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\log4net.xml
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\SqlSugar.dll
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
