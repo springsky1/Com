@@ -31,3 +31,4 @@ D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\log4net.dll
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\log4net.xml
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\SqlSugar.dll
 D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+D:\mycode\HUBCom\Com\ConsoleApp1\bin\Debug\Oracle.ManagedDataAccess.dll

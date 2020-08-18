@@ -1,4 +1,5 @@
 ﻿using Lib;
+using Lib.DB;
 using Lib.Npoi;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
+
+            DBHelper dBHelper = new DBHelper("");
+
+            List<UserInfo> users = dBHelper.GetData<UserInfo>(" select * from T_user ");
+
+            // DBHelper.Test();
+
             //    RedisHelper.Test();
 
             // MongodbHelper mongodb = new MongodbHelper();
@@ -24,7 +32,7 @@ namespace ConsoleApp1
 
             //ExcelTestClass.temp();
 
-            testc();
+            // testc();
         }
 
         static void testc()
