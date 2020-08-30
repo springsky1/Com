@@ -39,7 +39,7 @@
     "i18n-webpack-plugin": "^0.3.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
-    "open": "0.0.5",
+    "open": "7.1.0",
     "opn": "^4.0.2",
     "pre-commit": "^1.2.2",
     "shelljs": "^0.7.6",
