@@ -13,11 +13,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            TimeSpan timeSpan = new TimeSpan();
 
+            CombineList.Test();
 
-            DBHelper dBHelper = new DBHelper("");
+            Console.WriteLine(timeSpan.TotalSeconds.ToString());
 
-            List<UserInfo> users = dBHelper.GetData<UserInfo>(" select * from T_user ");
+            Console.ReadLine();
+            //  DBHelper dBHelper = new DBHelper("");
+
+            //List<UserInfo> users = dBHelper.GetData<UserInfo>(" select * from T_user ");
 
             // DBHelper.Test();
 

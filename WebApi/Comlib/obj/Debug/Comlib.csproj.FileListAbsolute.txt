@@ -1,0 +1,6 @@
+D:\mycode\HUBCom\Com\WebApi\Comlib\bin\Debug\Comlib.dll
+D:\mycode\HUBCom\Com\WebApi\Comlib\bin\Debug\Comlib.pdb
+D:\mycode\HUBCom\Com\WebApi\Comlib\obj\Debug\Comlib.csprojAssemblyReference.cache
+D:\mycode\HUBCom\Com\WebApi\Comlib\obj\Debug\Comlib.csproj.CoreCompileInputs.cache
+D:\mycode\HUBCom\Com\WebApi\Comlib\obj\Debug\Comlib.dll
+D:\mycode\HUBCom\Com\WebApi\Comlib\obj\Debug\Comlib.pdb
